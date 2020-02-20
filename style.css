@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroind';
+    src: url(fontes/idroid.otf);
+}
+body {
+    background-color: #9adbaa;
+}
+header {
+    background-image: linear-gradient(to top, #0F3D1A, #2DBD51);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 10px 20px 10px;
+    outline: none;
+    text-align: center;
+}
+
+header > nav > a {
+    border-radius: 2px;
+    color: white;
+    margin-left: 15px;
+    padding: 5px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+header > nav > a:hover {
+    background-color: #051f0b;
+    border-radius: 2px;
+    padding: 5px;
+}
+header > nav {
+    text-align: left;
+}
+header > p {
+    margin: 30px 10px 30px 10px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+    margin: auto;
+    width: 90%;
+}
+
+main > p > a {
+    color: #0F3D1A;
+    font: normal bolder 15px sans-serif;
+    text-decoration: none;
+}
+
+main > p > a:hover {
+    background-color: #9adbaa;
+    color: #0F3D1A;
+    font: normal bolder 15px sans-serif;
+    text-decoration: underline;
+}
+
+
+#titulo {
+    font: normal normal 1.5em idroind, sans-serif;
+}
+
+.subtitulo {
+    background-image: linear-gradient(to right, #9adbaa, #c0eccb, white);
+    font: normal normal 1.2em idroind, sans-serif;
+    padding: 2px 5px 2px 10px;
+}
+
+mark {
+    background-color: unset;
+    color: #0F3D1A;
+    font: normal bolder 16px cursive;
+}
+
+#img {
+
+    /*usar width para a imagem se adaptar auto*/
+    width: 100%;
+}
+
+.selecao {
+    background-color: #218A3B;
+    margin:  0px -20px 0px -20px;
+    padding: 10px;
+}
+
+.artigo {
+    background-color: #9adbaa;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 0px 20px 5px 20px;
+}
+
+.artigo > h2 {
+    background-color: #2DBD51;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    margin: 0px -20px 0px -20px;
+}
+
+.artigo > p > a {
+    color: #0F3D1A;
+    font: normal bolder 15px sans-serif;
+    text-decoration: none;
+}
+
+.artigo > p > a:hover {
+    background-color: #9adbaa;
+    color: #0F3D1A;
+    font: normal bolder 15px sans-serif;
+    text-decoration: underline;
+}
+
+.artigo ul {
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+iframe {
+    border-radius: 5px;
+    margin: auto;
+
+    /*usar width para o video se adaptar*/
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: #2DBD51;
+}
+img {
+    width: 100%;
+}
+
+/*upadate hamu*/
+
+footer > #transform {
+    opacity: 0;
+    transition-duration: 5s;
+    transition: ease-in-out;
+}
+
+footer > #transform:hover {
+    cursor: pointer;
+    opacity: 1;
+}
