@@ -142,4 +142,15 @@ img {
     width: 100%;
 }
 
-!!!!
+/*upadate hamu*/
+
+footer > #transform {
+    opacity: 0;
+    transition-duration: 5s;
+    transition: ease-in-out;
+}
+
+footer > #transform:hover {
+    cursor: pointer;
+    opacity: 1;
+}
